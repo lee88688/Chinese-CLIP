@@ -4,6 +4,10 @@ This script converts PyTorch implemented Chinese-CLIP (text or vision) model to 
 """
 
 import os
+import sys
+sys.path.append(os.path.realpath(os.path.join(os.path.dirname(__file__), '../')))
+sys.path.append(os.path.realpath(os.path.join(os.path.dirname(__file__), '../../')))
+
 import argparse
 from PIL import Image
 import torch
